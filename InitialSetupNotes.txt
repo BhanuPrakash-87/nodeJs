@@ -22,8 +22,10 @@ MachinePolicy       Undefined
   CurrentUser       Undefined
  LocalMachine       Undefined
  
+
  
 PS D:\Training\Practice\nodeJs\nodeJs\practice-project> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
 
 
 PS D:\Training\Practice\nodeJs\nodeJs\practice-project> npm init -y
@@ -41,3 +43,37 @@ Wrote to D:\Training\Practice\nodeJs\nodeJs\practice-project\package.json:
   "license": "ISC",
   "description": ""
 }
+
+
+
+PS D:\Training\Practice\nodeJs\nodeJs\practice-project> npm install express
+
+added 68 packages, and audited 69 packages in 3s
+
+16 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+
+Provided below code in index.js
+===============================
+const app = require('express')();
+const PORT = 8090;
+
+app.listen(
+    PORT,
+    () => console.log(`it's alive on http://localhost:${PORT}`)
+)
+===============================
+
+
+
+PS D:\Training\Practice\nodeJs\nodeJs\practice-project> node .
+it's alive on http://localhost:8090
+
+
+
+Paste "http://localhost:8090" in browser and we get message as below
+Cannot GET /
