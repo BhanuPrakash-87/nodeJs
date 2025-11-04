@@ -1,0 +1,43 @@
+PS D:\Training\Practice\nodeJs\nodeJs\practice-project> npm init -y
+npm : File C:\Program Files\nodejs\npm.ps1 cannot be loaded because running scripts is disabled on this system. For more information, see 
+about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:1
++ npm init -y
++ ~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+
+
+
+PS D:\Training\Practice\nodeJs\nodeJs\practice-project> Get-ExecutionPolicy -List
+
+        Scope ExecutionPolicy
+        Scope ExecutionPolicy
+        Scope ExecutionPolicy
+        Scope ExecutionPolicy
+        ----- ---------------
+MachinePolicy       Undefined
+   UserPolicy       Undefined
+      Process       Undefined
+  CurrentUser       Undefined
+ LocalMachine       Undefined
+ 
+ 
+PS D:\Training\Practice\nodeJs\nodeJs\practice-project> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+
+PS D:\Training\Practice\nodeJs\nodeJs\practice-project> npm init -y
+Wrote to D:\Training\Practice\nodeJs\nodeJs\practice-project\package.json:
+
+{
+  "name": "practice-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
