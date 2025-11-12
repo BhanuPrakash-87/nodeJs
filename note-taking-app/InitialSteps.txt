@@ -1,0 +1,72 @@
+D:\Training\Practice\nodeJs\nodeJs\note-taking-app>npm init -y
+Wrote to D:\Training\Practice\nodeJs\nodeJs\note-taking-app\package.json:
+
+{
+  "name": "note-taking-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
+
+
+
+D:\Training\Practice\nodeJs\nodeJs\note-taking-app>npm i mysql2
+
+added 13 packages, and audited 14 packages in 4s
+
+2 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+
+// To check for any errors
+D:\Training\Practice\nodeJs\nodeJs\note-taking-app>node database.js
+
+
+
+// Output of select query
+D:\Training\Practice\nodeJs\nodeJs\note-taking-app>node database.js
+[
+  {
+    id: 1,
+    title: 'My First Note',
+    contents: 'A note about something',
+    created: 2025-11-11T06:20:36.000Z
+  },
+  {
+    id: 2,
+    title: 'My Second Note',
+    contents: 'A note about something else',
+    created: 2025-11-11T06:20:36.000Z
+  }
+]
+
+
+
+D:\Training\Practice\nodeJs\nodeJs\note-taking-app>npm i dotenv
+
+added 1 package, and audited 15 packages in 1s
+
+3 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+
+D:\Training\Practice\nodeJs\nodeJs\note-taking-app>npm i express
+
+added 66 packages, and audited 81 packages in 3s
+
+18 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
